@@ -50,13 +50,13 @@ ADD "$PWD"/lib/*.jar $CATALINA_HOME/lib/
 #---------------------------------------
 # tag:MySQL
 #---------------------------------------
-#ADD "$PWD"/bin/catalina.sh_mysql $CATALINA_HOME/bin/catalina.sh
+ADD "$PWD"/bin/catalina.sh_mysql $CATALINA_HOME/bin/catalina.sh
 RUN chmod 755 $CATALINA_HOME/bin/catalina.sh
 #---------------------------------------
 # tag:MySQL_workbook
 #---------------------------------------
-ADD "$PWD"/conf/server.xml_workbook $CATALINA_HOME/conf/server.xml
-ADD "$PWD"/conf/context.xml_workbook $CATALINA_HOME/conf/context.xml
+#ADD "$PWD"/conf/server.xml_workbook $CATALINA_HOME/conf/server.xml
+#ADD "$PWD"/conf/context.xml_workbook $CATALINA_HOME/conf/context.xml
 #---------------------------------------
 # tag:deploy_jaxrs-sample
 #---------------------------------------
