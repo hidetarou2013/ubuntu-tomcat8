@@ -51,7 +51,7 @@ ADD "$PWD"/lib/*.jar $CATALINA_HOME/lib/
 # tag:MySQL
 #---------------------------------------
 #ADD "$PWD"/bin/catalina.sh_mysql $CATALINA_HOME/bin/catalina.sh
-#RUN chmod 755 $CATALINA_HOME/bin/catalina.sh
+RUN chmod 755 $CATALINA_HOME/bin/catalina.sh
 #---------------------------------------
 # tag:MySQL_workbook
 #---------------------------------------
